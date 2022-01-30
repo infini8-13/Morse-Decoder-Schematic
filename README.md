@@ -1,7 +1,11 @@
 # TRINIT_1nmLaysChips_EC01
 
 ## Morse Code Decoder using Digital Logic  
-Designing Morse Decoder according to the ITU standards with digital logic and simulated in Proteus.
+
+### Introduction    
+Designing Morse Decoder according to the ITU standards with digital logic and simulated in Proteus.  
+
+Morse code is an old system of encoding messages that is used to send telegraphic information using signals and rhythm. In written communication, Morse code uses dots and dashes to represent a limited number of alphabet letters, numbers, punctuation and special characters of a given message. When messages are sent by sound, radio signals or light flashes, dots are short beeps or clicks or flashes, and dashes are longer ones.  
 
 
 ### Our Approach
@@ -46,6 +50,9 @@ __*Fig 3. International Morse Code*__
 
 ### CIRCUIT
 
+We have used Universal Shift Registers to traverse the Tree, stored in the ROM(IC 2732).  
+Made and run bin.py to create a binary for storing the tree(morse.bin)
+
 #### Timing :
 
 In this part of the circuit we interpret the input tell the feature/type of input . We have used a counter which is reset when the input is toggled. Using this we calculate for how many clock cycles the input remains zero or one and thus we infer its type.
@@ -60,20 +67,15 @@ In this part of the circuit we interpret the input tell the feature/type of inpu
 
 #### The Tree Traversal 
 
-| Feature           | Action                                                       |
-| ----------------- | ------------------------------------------------------------ |
-| dot               | go left , new address = 2* current address +1                |
-| symbol spacing    | Used as clock for circuits (dot/dash is stored in two registers) |
-| dash              | go right , new address = 2* current address +2               |
-| character spacing | Reset the address shift register                             |
-| word spacing      | -----                                                        |
+| Feature           | Action                                         |
+| ----------------- | ---------------------------------------------- |
+| dot               | go left , new address = 2* current address +1  |
+| symbol spacing    | Used as clock for circuits                     |
+| dash              | go right , new address = 2* current address +2 |
+| character spacing | Reset the address shift register               |
+| word spacing      | -----                                          |
 
-![Tree traversal](./images/tree traversal.jpg)
 
-Summary :
-
-1. Always shift the bits to right 
-2. Add 01 if input is dot(U24=1,U25=0) and 10 if input is dash(U24=0,U25=1)
 
 #### Test cases : 
 
