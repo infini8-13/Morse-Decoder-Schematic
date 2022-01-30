@@ -85,7 +85,8 @@ In this part of the circuit we interpret the input tell the feature/type of inpu
 | 299792458                                   | ..--- ----. ----. --... ----. ..--- ....- ..... ---..        |       |
 | The quick brown fox jumps over the lazy dog | - .... . ....... --.- ..- .. -.-. -.- ....... -... .-. --- .-- -. ....... ..-. --- -..- ....... .--- ..- -- .--. ... ....... --- ...- . .-. ....... - .... . ....... .-.. .- --.. -.-- ....... -.. --- --. |       |
 | 28.6139 N, 77.2090 E                        | ..--- ---.. .-.-.- -.... .---- ...-- ----. ....... -. --..-- ....... --... --... .-.-.- ..--- ----- ----. ----- ....... . |       |
-
+#### Final Circuit :
+![Final Circuit](./images/timing_circuit.jpg)
 References:
 
 1. https://web.stanford.edu/class/archive/ee/ee108a/ee108a.1082/reader/ch19to21.pdf  
