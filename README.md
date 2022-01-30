@@ -57,7 +57,7 @@ Made and run bin.py to create a binary for storing the tree(morse.bin)
 
 In this part of the circuit we interpret the input tell the feature/type of input . We have used a counter which is reset when the input is toggled. Using this we calculate for how many clock cycles the input remains zero or one and thus we infer its type.
 
-![Timing Circuit](./images/timing circuit.jpg)
+![Timing Circuit](./images/timing_circuit.jpg)
 
 #### Truth Table
 
@@ -86,7 +86,7 @@ In this part of the circuit we interpret the input tell the feature/type of inpu
 | The quick brown fox jumps over the lazy dog | - .... . ....... --.- ..- .. -.-. -.- ....... -... .-. --- .-- -. ....... ..-. --- -..- ....... .--- ..- -- .--. ... ....... --- ...- . .-. ....... - .... . ....... .-.. .- --.. -.-- ....... -.. --- --. |       |
 | 28.6139 N, 77.2090 E                        | ..--- ---.. .-.-.- -.... .---- ...-- ----. ....... -. --..-- ....... --... --... .-.-.- ..--- ----- ----. ----- ....... . |       |
 #### Final Circuit :
-![Final Circuit](./images/timing_circuit.jpg)
+![Final Circuit](./images/tree_traversal.jpg)
 References:
 
 1. https://web.stanford.edu/class/archive/ee/ee108a/ee108a.1082/reader/ch19to21.pdf  
