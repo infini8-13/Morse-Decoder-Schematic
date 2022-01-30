@@ -54,15 +54,20 @@ In this part of the circuit we interpret the input tell the feature/type of inpu
 
 #### The Tree Traversal 
 
-| Feature           | Action                                         |
-| ----------------- | ---------------------------------------------- |
-| dot               | go left , new address = 2* current address +1  |
-| symbol spacing    | Used as clock for circuits                     |
-| dash              | go right , new address = 2* current address +2 |
-| character spacing | Reset the address shift register               |
-| word spacing      | -----                                          |
+| Feature           | Action                                                       |
+| ----------------- | ------------------------------------------------------------ |
+| dot               | go left , new address = 2* current address +1                |
+| symbol spacing    | Used as clock for circuits (dot/dash is stored in two registers) |
+| dash              | go right , new address = 2* current address +2               |
+| character spacing | Reset the address shift register                             |
+| word spacing      | -----                                                        |
 
+![Tree traversal](./images/tree traversal.jpg)
 
+Summary :
+
+1. Always shift the bits to right 
+2. Add 01 if input is dot(U24=1,U25=0) and 10 if input is dash(U24=0,U25=1)
 
 #### Test cases : 
 
