@@ -20,15 +20,21 @@ number of bits
 
 In morse code also  the bits have been code based on frequency , so we can use huffman decoding technique.
 
-![Morse code Tree](./images/Morse_code_tree3.png)
+![Morse code Tree](./images/Morse_code_tree3.png)  
+
+__*Fig 1. The Morse Tree*__
+
+
 
 The address of the current table node is held in the node register. When type is asserted — indicating a terminal node — node is set to the value of the next input bit (which selects one of the two children of the root to restart the search), the value field from the table is enabled into the output register, and oval is asserted on the following cycle. This outputs the current symbol and starts the machine at one of the children of the root depending on the first bit of the next symbol. If type is not assereted — indicating an internal node — the input value is combined with the value field from the table to select the left or right child of the current node — traversing the tree. The input value provides the least significant bit of the node address while the remaining bits come from the value field of the table.
 
-![Block Diagram for traversing tree](./images/huffman_decoder.png)
+![Block Diagram for traversing tree](./images/huffman_decoder.png)  
+__*Fig 2. Block Diagram for traversing the tree*__
 
 #### About Morse Code 
 
-![International Morse Code](./images/morse-code.jpg)
+![International Morse Code](./images/morse-code.jpg)  
+__*Fig 3. International Morse Code*__
 
 | Feature           | Number of pulse |
 | ----------------- | --------------- |
